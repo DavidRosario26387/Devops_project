@@ -9,7 +9,7 @@ body {
 }
 
 .container {
-    background-color: #fff;
+    background-color: #ffffff;
     padding: 30px 40px;
     border-radius: 10px;
     box-shadow: 0 4px 15px rgba(0,0,0,0.1);
@@ -18,9 +18,13 @@ body {
 
 h1 {
     text-align: center;
-    color: #333;
     margin-bottom: 25px;
     color: #028bfc;
+}
+h4{
+    text-align: center;
+    color: #333333;
+    margin-bottom: 25px;
 }
 
 /* Task Input */
