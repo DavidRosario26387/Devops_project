@@ -28,8 +28,8 @@ jobs:
 
       # 4. Run backend tests
       - name: Run tests
-        run: |
-          pytest test/test_app.py
+        run: python -m pytest test/test_app.py
+          # pytest test/test_app.py
 
       # 5. Build backend Docker image
       - name: Build backend image
