@@ -1,0 +1,11 @@
+- hosts: localhost
+  tasks:
+    - name: Start Minikube
+      shell: minikube start
+      register: minikube_start
+      ignore_errors: yes
+
+    - name: Apply Kubernetes manifests (pull images from Docker Hub)
+      shell: |
+        kubectl apply -f ../k8s/deployment.yaml
+        kubectl apply -f ../k8s/service.yaml
